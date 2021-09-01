@@ -9,7 +9,6 @@ export class DtoSaveBlog {
   blogId?: string;
   cover?: string;
   tags?: string;
-  content?: string;
   @IsNotEmpty({ message: '博文状态不可为空' })
   @IsIn(Object.values(BlogStatus), { message: '博文状态不合法' })
   status: BlogStatus;
